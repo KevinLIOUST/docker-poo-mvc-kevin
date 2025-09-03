@@ -10,6 +10,11 @@ class HomeController
         $pokemonModel = new PokemonModel();
         $tousLesPokemons = $pokemonModel->getAll();
 
+        // var_dump($tousLesPokemons);
+
+        $id = $pokemonModel->getById(3);
+        var_dump($id);
+
         // On appelle la vue home
         require_once __DIR__ . "/../views/home.php";
         return 'Pokemon par exemple 25 : Pikachu';
