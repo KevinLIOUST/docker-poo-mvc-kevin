@@ -1,0 +1,66 @@
+/* Importation de la police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+/* Pour toute la page */
+body {
+  font-family: 'Delius Swash Caps', Arial, Helvetica, sans-serif;
+  background-color: #c2cae8;
+}
+
+/* Mode jour */
+.mode-jour {
+  background-color: #c2cae8;
+}
+
+/* Mode nuit */
+.mode-nuit {
+  background-color: #111d4a;
+}
+
+/* Pour le titre de jour */
+.titre-jour {
+  font-size: x-large;
+  color: #111d4a;
+}
+
+/* Pour le titre de nuit */
+.titre-nuit {
+  color: #c2cae8;
+}
+
+/* Pour le titre et le bouton mode jour nuit */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Les boutons du mode jour */
+
+.btns-jour {
+  width: 200px;
+  height: auto;
+  font-size: xx-large;
+  border: 3px solid #111d4a;
+  background-color: brown;
+}
+
+/* Quand l'utilisateur passe sa souris sur les boutons */
+.btns-jour:hover {
+  background-color: rgb(152, 101, 101);
+}
+
+/* Les boutons du mode nuit */
+
+.btns-nuit {
+  width: 200px;
+  height: auto;
+  font-size: xx-large;
+  border: 3px solid #c2cae8;
+  background-color: brown;
+}
+
+/* Quand l'utilisateur passe sa souris sur les boutons */
+.btns-nuit:hover {
+  background-color: rgb(152, 101, 101);
+}
