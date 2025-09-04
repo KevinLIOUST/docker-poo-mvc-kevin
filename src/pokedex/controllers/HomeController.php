@@ -1,4 +1,5 @@
 <?php
+// class HomeController pour récupérer les données à partir de la class PokemonModel, puis on lui donne les données à la vue home.php pour que home.php puisse afficher les données correspondantes
 class HomeController
 {
     public function index()
@@ -12,12 +13,10 @@ class HomeController
 
         // var_dump($tousLesPokemons);
 
-        $id = $pokemonModel->getById(3);
-        var_dump($id);
-
-        // On appelle la vue home
+        // On donne les données à la vue home.php en appelant la vue home.php
         require_once __DIR__ . "/../views/home.php";
-        return 'Pokemon par exemple 25 : Pikachu';
+
+        // return 'Pokemon par exemple 25 : Pikachu';
     }
 }
 ?>

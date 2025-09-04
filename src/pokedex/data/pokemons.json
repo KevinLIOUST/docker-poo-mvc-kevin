@@ -3,21 +3,21 @@
         "id": 1,
         "name": "Bulbizarre",
         "type": ["plante", "poison"],
-        "image": "https://www.pokepedia.fr/images/e/ef/Bulbizarre-RFVF.png",
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png",
         "description": "Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance."
     },
     {
         "id": 2,
         "name": "Herbizarre",
         "type": ["plante", "poison"],
-        "image": "https://www.pokepedia.fr/images/4/44/Herbizarre-RFVF.png",
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png",
         "description": "Son bulbe dorsal devient si gros qu'il ne peut plus se tenir sur ses membres postérieurs."
     },
     {
         "id": 3,
         "name": "Florizarre",
         "type": ["plante", "poison"],
-        "image": "https://www.pokepedia.fr/images/4/42/Florizarre-RFVF.png",
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png",
         "description": "Sa plante mûrit en absorbant les rayons du soleil. Il migre souvent vers les endroits ensoleillés."
     }
 ]

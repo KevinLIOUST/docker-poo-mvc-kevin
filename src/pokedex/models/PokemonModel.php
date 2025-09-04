@@ -1,4 +1,5 @@
 <?php
+// class PokemonModel pour pouvoir rechercher et récupérer les données sur les Pokémon
 class PokemonModel
 {
 
@@ -20,11 +21,9 @@ class PokemonModel
         $result = file_get_contents(__DIR__ . "/../data/pokemons.json");
         $fichierDecode = json_decode($result, true);
 
-        foreach ($fichierDecode as $pokemonGeneral) {
-            foreach ($pokemonGeneral as $key => $value) {
-                if ($key == "id" && $value == $id) {
-                    return $pokemonGeneral;
-                }
+        foreach ($fichierDecode as $pokemon) {
+            if ($pokemon['id'] == $id) {
+                return $pokemon;
             }
         }
     }
