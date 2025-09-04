@@ -18,8 +18,10 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-center header mb-3">
+    <header class="d-flex justify-content-center align-items-center header mb-3 p-3">
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
         <h1 class="mt-3">Pokédex</h1>
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
     </header>
 
     <main class="main-pokemon">
@@ -28,11 +30,11 @@
                 <div class="d-flex justify-content-center">
                     <img class="taille-img" src="<?= $pokemon['image'] ?>" alt="<?= $pokemon['image'] ?>">
                 </div>
-                <div class="div-nom-numero">
-                    <p class="text-center">Nom : <?= $pokemon['name'] ?></p>
-                    <p class="text-center">n°pokédex : <?= $pokemon['id'] ?></p>
+                <p class="ms-3 mx-3">Nom : <b><?= $pokemon['name'] ?></b></p>
+                <p class="ms-3 mx-3">n°pokédex : <b><?= $pokemon['id'] ?></b></p>
+                <div class="ms-3 mx-3 mb-3">
+                    Types : <?= implode(" ", $pokemon['type']) ?>
                 </div>
-                <p class="text-center">Types : <?= implode(", ", $pokemon['type']) ?></p>
                 <div class="d-flex justify-content-center mb-3">
                     <form action="index.php?url=details/<?= $pokemon['id'] ?>" method="POST">
                         <button class="btn btns-jour" type="submit">En savoir plus</button>
@@ -42,8 +44,10 @@
         <?php } ?>
     </main>
 
-    <footer class="d-flex justify-content-center footer mt-3">
+    <footer class="d-flex justify-content-center footer align-items-center p-3">
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
         <p>Pokédex fait par Kevin LIOUST DIT LAFLEUR !!!!</p>
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
     </footer>
 </body>
 

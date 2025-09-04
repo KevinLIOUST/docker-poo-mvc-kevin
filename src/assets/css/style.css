@@ -1,11 +1,30 @@
 /* Importation de la police d'écriture */
 
-@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@font-face {
+font-family: 'Pokemon Hollow';
+src: url('../font/Pokemon\ Hollow.ttf') format('trueType'),
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
 
 /* Pour toute la page */
 body {
-  font-family: 'Delius Swash Caps', Arial, Helvetica, sans-serif;
-  /* background-color: #c2cae8; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Pokemon Hollow', Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+main {
+  flex: 1;
 }
 
 /* Mode jour */
@@ -24,7 +43,10 @@ body {
 }
 
 .footer {
+  width: 100%;
+  margin-top: 2rem;
   background-color: #ec5252;
+  bottom: 0;
 }
 
 /* Préparation du terrain pour afficher les pokémon */
@@ -44,14 +66,22 @@ body {
   margin-right: 2rem;
 }
 
-/* Pour afficher le nom du pokémon et son numéro dans le podédex */
-.div-nom-numero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.div-pokemon-details {
+  width: 30%;
+  height: auto;
+  display: block;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .taille-img {
   width: 50%;
+  height: auto;
+}
+
+.taille-img-type {
+  width: 15%;
   height: auto;
 }
 
@@ -69,7 +99,7 @@ body {
 /* Les boutons du mode jour */
 
 .btns-jour {
-  width: 150px;
+  width: 200px;
   height: auto;
   font-size: large;
   border: 3px solid #000000;
