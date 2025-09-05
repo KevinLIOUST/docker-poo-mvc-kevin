@@ -27,6 +27,10 @@ main {
   flex: 1;
 }
 
+.titre-error {
+  font-size: 5rem;
+}
+
 /* Mode jour */
 .mode-jour {
   background-color: #c2cae8;
@@ -64,6 +68,7 @@ main {
   border-radius: 8px;
   margin-left: 2rem;
   margin-right: 2rem;
+  background-color: #E9E9E9;
 }
 
 .div-pokemon-details {
@@ -73,6 +78,7 @@ main {
   border: 3px solid black;
   border-radius: 8px;
   margin: 0 auto;
+  background-color: #E9E9E9;
 }
 
 .taille-img {

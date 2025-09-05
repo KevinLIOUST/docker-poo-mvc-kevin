@@ -26,6 +26,10 @@ switch ($page) {
         $detailsController = new DetailsController();
         $detailsController->show($id);
         break;
+    
+        case 'error':
+            include_once __DIR__ . '/pokedex/views/error404.php';
+            break;
 
     default:
         break;

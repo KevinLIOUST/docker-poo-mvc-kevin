@@ -31,6 +31,77 @@
         "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png",
         "description": "Sa plante mûrit en absorbant les rayons du soleil. Il migre souvent vers les endroits ensoleillés.",
         "generation": 1
+    },
+    {
+        "id": 4,
+        "name": "Salamèche",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\" alt=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png",
+        "description": "La flamme au bout de sa queue représente sa vitalité. Quand Salamèche n'est pas au meilleur de sa forme, elle faiblit.",
+        "generation": 1
+    },
+    {
+        "id": 5,
+        "name": "Reptincel",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\" alt=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/005.png",
+        "description": "En agitant sa queue enflammée, il peut élever la température ambiante de manière exponentielle et ainsi tourmenter ses adversaires.",
+        "generation": 1
+    },
+    {
+        "id": 6,
+        "name": "Dracaufeu",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\" alt=\"https://www.pokepedia.fr/images/e/ec/Miniature_Type_Feu_XY.png\">",
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/4/4a/Miniature_Type_Vol_XY.png\" alt=\"https://www.pokepedia.fr/images/4/4a/Miniature_Type_Vol_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png",
+        "description": "Quand Dracaufeu s'énerve réellement, la flamme au bout de sa queue devient bleue.",
+        "generation": 1
+    },
+    {
+        "id": 7,
+        "name": "Carapuce",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\" alt=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png",
+        "description": "Ce Pokémon crache une écume redoutable. Après sa naissance, son dos gonfle et durcit pour former une carapace.",
+        "generation": 1
+    },
+    {
+        "id": 8,
+        "name": "Carabaffe",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\" alt=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/008.png",
+        "description": "Sa longue queue touffue est un symbole de longévité. Les personnes âgées apprécient donc particulièrement ce Pokémon.",
+        "generation": 1
+    },
+    {
+        "id": 9,
+        "name": "Tortank",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\" alt=\"https://www.pokepedia.fr/images/4/43/Miniature_Type_Eau_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png",
+        "description": "Il augmente délibérément sa masse corporelle pour contrer le recul de ses puissants jets d'eau.",
+        "generation": 1
+    },
+    {
+        "id": 10,
+        "name": "Chenipan",
+        "type": [
+            "<img class=\"taille-img-type\" src=\"https://www.pokepedia.fr/images/2/21/Miniature_Type_Insecte_XY.png\" alt=\"https://www.pokepedia.fr/images/2/21/Miniature_Type_Insecte_XY.png\">"
+        ],
+        "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/010.png",
+        "description": "Pour se protéger, il émet par ses antennes une odeur nauséabonde qui fait fuir ses ennemis.",
+        "generation": 1
     }
 ]
 

@@ -1,11 +1,9 @@
-<!-- home.php pour afficher les données du menu principal -->
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
+    <title>Error 404</title>
 
     <!-- Lien vers Bootstrap -->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -16,7 +14,6 @@
     <!-- Lien vers le fichier pour designer le site web -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
     <header class="d-flex justify-content-center align-items-center header mb-3 p-3">
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
@@ -24,25 +21,19 @@
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2_2.png" alt="../../assets/img/pokeball_2_2.png">
     </header>
 
-    <main class="main-pokemon">
-        <?php foreach ($tousLesPokemons as $pokemon) { ?>
-            <div class="div-pokemon">
-                <div class="d-flex justify-content-center">
-                    <img class="taille-img" src="<?= $pokemon['image'] ?>" alt="<?= $pokemon['image'] ?>">
-                </div>
-                <p class="ms-3 mx-3">Nom : <b><?= $pokemon['name'] ?></b></p>
-                <p class="ms-3 mx-3">n°pokédex : <b><?= $pokemon['id'] ?></b></p>
-                <div class="ms-3 mx-3 mb-3">
-                    Type(s) : <?= implode(" ", $pokemon['type']) ?>
-                </div>
-                <p class="ms-3 mx-3">Génération : <b><?= $pokemon['generation'] ?></b></p>
-                <div class="d-flex justify-content-center mb-3">
-                    <form action="index.php?url=details/<?= $pokemon['id'] ?>" method="POST">
-                        <button class="btn btns-jour" type="submit">En savoir plus</button>
-                    </form>
-                </div>
+    <main>
+        <div>
+            <p class="titre-error text-center">404</p>
+            <p class="text-center">Cette page n'existe pas !</p>
+            <div class="d-flex justify-content-center">
+                <img src="../../assets/img/Pikachu_Confused_2.png" alt="../../assets/img/Pikachu_Confused_2.png">
             </div>
-        <?php } ?>
+            <div class="d-flex justify-content-center">
+                <form action="index.php">
+                    <button class="btn btns-jour">Accueil</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="d-flex justify-content-center footer align-items-center p-3">
@@ -51,5 +42,4 @@
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2_2.png" alt="../../assets/img/pokeball_2_2.png">
     </footer>
 </body>
-
 </html>

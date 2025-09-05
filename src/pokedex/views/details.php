@@ -1,5 +1,27 @@
 <?php
 // var_dump($pokemonAvecId);
+
+$tousLesPokemons = $pokemonModel->getAll();
+// var_dump($_GET);
+
+if (isset($_GET['url'])) {
+    // Trouver la position du caractère spécifique (par exemple ':')
+    $position = strpos($_GET['url'], '/');
+
+    // Vérifier si le caractère existe dans la chaîne
+    if ($position !== false) {
+        // Extraire la partie après le caractère '/'
+        $partie = substr($_GET['url'], $position + 1);
+
+        if (!is_numeric($partie)) {
+            $pokemonModel->showError();
+        } else {
+            if ($partie > count($tousLesPokemons)) {
+                $pokemonModel->showError();
+            }
+        }
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +46,7 @@
     <header class="d-flex justify-content-center align-items-center header mb-3 p-3">
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
         <h1 class="mt-3">Pokédex</h1>
-        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2_2.png" alt="../../assets/img/pokeball_2_2.png">
     </header>
 
     <main class="div-pokemon-details">
@@ -33,9 +55,11 @@
         </div>
         <p class="ms-3 mx-3">Nom : <b><?= $pokemonAvecId['name'] ?></b></p>
         <p class="ms-3 mx-3">n°pokédex : <b><?= $pokemonAvecId['id'] ?></b></p>
-        <p class="ms-3 mx-3">Type(s) : <?= $pokemonAvecId['type'] ?></p>
+        <div class="ms-3 mx-3 mb-3">
+            Type(s) : <?= implode(" ", $pokemonAvecId['type']) ?>
+        </div>
         <p class="ms-3 mx-3"><?= $pokemonAvecId['description'] ?></p>
-        <p class="ms-3 mx-3">Génération : <?= $pokemonAvecId['generation'] ?></p>
+        <p class="ms-3 mx-3">Génération : <b><?= $pokemonAvecId['generation'] ?></b></p>
         <div class="d-flex justify-content-center mb-3">
             <form action="index.php">
                 <button class="btn btns-jour">Retour</button>
@@ -46,7 +70,7 @@
     <footer class="d-flex justify-content-center footer align-items-center p-3">
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
         <p>Pokédex fait par Kevin LIOUST DIT LAFLEUR !!!!</p>
-        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
+        <img class="ms-5 mx-5" src="../../assets/img/pokeball_2_2.png" alt="../../assets/img/pokeball_2_2.png">
     </footer>
 </body>
 

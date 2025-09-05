@@ -4,6 +4,7 @@ class PokemonModel
 {
 
     // CA MARCHE !!!!
+    // Méthode pour récupérer tous les Pokémon
     public function getAll()
     {
         // il va falloir chercher dans le json
@@ -16,6 +17,7 @@ class PokemonModel
     }
 
     // CA MARCHE !!!!
+    // Méthode pour récupérer le pokémon en question grâce à l'id du pokémon en question
     public function getById($id)
     {
         $result = file_get_contents(__DIR__ . "/../data/pokemons.json");
@@ -26,6 +28,11 @@ class PokemonModel
                 return $pokemon;
             }
         }
+    }
+
+    // Méthode pour montrer l'erreur 404 quand le pokémon n'existe pas
+    public function showError() {
+        header('Location: index.php?url=error');
     }
 }
 ?>
