@@ -134,3 +134,17 @@ main {
 .btns-nuit:hover {
   background-color: rgb(152, 101, 101);
 }
+
+@media screen and (max-width: 375px) {
+  .main-pokemon {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: large;
+  }
+
+  .div-pokemon-details {
+    width: 80%;
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <!-- Lien vers le fichier pour designer le site web -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header class="d-flex justify-content-center align-items-center header mb-3 p-3">
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2.png" alt="../../assets/img/pokeball_2.png">
@@ -26,7 +28,8 @@
             <p class="titre-error text-center">404</p>
             <p class="text-center">Cette page n'existe pas !</p>
             <div class="d-flex justify-content-center">
-                <img src="../../assets/img/Pikachu_Confused_2.png" alt="../../assets/img/Pikachu_Confused_2.png">
+                <img class="taille-img" src="../../assets/img/Pikachu_Confused_2.png"
+                    alt="../../assets/img/Pikachu_Confused_2.png">
             </div>
             <div class="d-flex justify-content-center">
                 <form action="index.php">
@@ -42,4 +45,5 @@
         <img class="ms-5 mx-5" src="../../assets/img/pokeball_2_2.png" alt="../../assets/img/pokeball_2_2.png">
     </footer>
 </body>
+
 </html>

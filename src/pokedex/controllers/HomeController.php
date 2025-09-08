@@ -1,11 +1,16 @@
 <?php
 // class HomeController pour récupérer les données à partir de la class PokemonModel, puis on lui donne les données à la vue home.php pour que home.php puisse afficher les données correspondantes
+
+namespace controllers;
+
+use models\PokemonModel;
+
 class HomeController
 {
     public function index()
     {
         // On va chercher le modèle
-        require_once __DIR__ . "/../models/PokemonModel.php";
+        // require_once __DIR__ . "/../models/PokemonModel.php";
 
         // On récupère tous les Pokémon avec la méthode getAll()
         $pokemonModel = new PokemonModel();

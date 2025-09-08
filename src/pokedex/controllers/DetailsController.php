@@ -1,4 +1,8 @@
 <?php
+
+namespace controllers;
+
+use models\PokemonModel;
 class DetailsController
 {
     public function show($id)

@@ -1,0 +1,15 @@
+{
+    "name": "kevin/src",
+    "autoload": {
+        "psr-4": {
+            "Kevin\\Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "KevinLIOUST",
+            "email": "kevin.lioust@outlook.fr"
+        }
+    ],
+    "require": {}
+}
