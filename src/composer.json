@@ -2,7 +2,7 @@
     "name": "kevin/src",
     "autoload": {
         "psr-4": {
-            "Kevin\\Src\\": "src/"
+            "App\\": "src/pokedex"
         }
     },
     "authors": [

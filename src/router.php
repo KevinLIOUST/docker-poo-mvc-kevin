@@ -1,8 +1,8 @@
 <?php
 // Le router appelle tous les controleurs dont on a besoin pour récupérer et afficher les données en fonction de la page
 
-use controllers\HomeController;
-use controllers\DetailsController;
+use App\controllers\HomeController;
+use App\controllers\DetailsController;
 
 $url = $_GET["url"] ?? 'home';
 

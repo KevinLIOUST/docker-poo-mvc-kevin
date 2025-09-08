@@ -1,7 +1,7 @@
 <?php
 // class PokemonModel pour pouvoir rechercher et récupérer les données sur les Pokémon
 
-namespace models;
+namespace App\models;
 class PokemonModel
 {
 

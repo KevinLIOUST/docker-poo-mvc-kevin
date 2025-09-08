@@ -1,9 +1,9 @@
 <?php
 // class HomeController pour récupérer les données à partir de la class PokemonModel, puis on lui donne les données à la vue home.php pour que home.php puisse afficher les données correspondantes
 
-namespace controllers;
+namespace App\controllers;
 
-use models\PokemonModel;
+use App\models\PokemonModel;
 
 class HomeController
 {
